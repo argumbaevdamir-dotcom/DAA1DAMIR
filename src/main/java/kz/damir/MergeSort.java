@@ -2,7 +2,7 @@ package kz.damir;
 
 public class MergeSort {
 
-    private static final int  = 15;
+    private static final int CUTOFF = 15;
 
     public static void sort(int[] a, Metrics metrics) {
         if (a.length == 0) {
