@@ -20,6 +20,7 @@ assert len({(r['algorithm'], r['input'], r['n']) for r in rows}) == 36
 colors = ['#00E5FF', '#FF007F', '#00FF66']
 markers = ['o', 's', '^']
 
+
 BG_DARK = '#0D0F12'
 AXIS_BG = '#14181F'
 TEXT_COLOR = '#E0E6ED'
@@ -101,6 +102,7 @@ for metric, title, ylabel, subtitle in [
         text.set_color(TEXT_COLOR)
 
     fig.subplots_adjust(top=0.78, bottom=0.19, left=0.075, right=0.985, wspace=0.14)
+
 
     fig.savefig(ROOT / 'plots' / f'{metric}_vs_n.png', facecolor=fig.get_facecolor(), edgecolor='none')
     plt.close(fig)
